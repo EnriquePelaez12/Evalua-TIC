@@ -3,17 +3,19 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
+    <ion-title class="col">
         EVALUA-TIC
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-card>
-      <ion-card-header class="texto">
+<ion-content pading color="success">
+  <ion-card class="bg">
+      <ion-card-header class="titulo">
           <ion-card-title>Lista de Preguntas</ion-card-title>
         </ion-card-header>
+        </ion-card>
+        <ion-card color="success">
     <ion-item-sliding *ngFor="let poo of poos">
         <ion-item lines="inset" button [routerLink]="['/details-preguntas', poo.id]">
           <ion-label>
@@ -21,9 +23,6 @@
           </ion-label>
         </ion-item>
       </ion-item-sliding>
-
-      
-      <br><br>
 
          <!-- <ion-fab vertical="bottom" horizontal="end" slot="fixed">
           <ion-fab-button routerLink="/details-preguntas" routerDirection="forward">

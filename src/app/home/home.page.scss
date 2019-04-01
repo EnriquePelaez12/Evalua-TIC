@@ -1,21 +1,38 @@
-.welcome-card ion-img {
-  max-height: 35vh;
-  overflow: hidden;
-}
-.texto{
-  text-align: center;
-}
 
-.bg-image {
-  background: url('/src/assets/icon/background.jpg') no-repeat center center fixed;
-  background-size: cover;
+.icon{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
-.no-scroll .scroll-content {
-  overflow: hidden;
-}       
+.ng-sub{
+  text-align: center;
+  color: black;
+  background: linear-gradient(to left, #dae1d8 0%, #dae1d8 100%);
+
+}
+.alineacion{
+  text-align: center;
+  font-style: italic;
+}
+   
+.titulo{
+  text-align: center;
+  color: rgb(23, 24, 23);
+  font-family: fantasy; 
+  font-size: 200%;
+
+}
+.col{
+  color: darkorange;
+  font-family: fantasy; 
+}
+.bg-boton{
+  color: darkorange;
+}
 
 .bg{
- 
-  //background-image: url("/src/assets/icon/fondo.png");
-   background: linear-gradient(to left, #30f0a0 0%, #21d8b9 100%);
+  
+  background: linear-gradient(to left, #dae1d8 0%, #dae1d8 100%);
+
 }

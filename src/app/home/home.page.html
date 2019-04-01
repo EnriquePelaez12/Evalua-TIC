@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
+    <ion-title class="col">
         EVALUA-TIC
     </ion-title>
     <ion-button (click)="OnLogout()" color="dark" slot="end">
@@ -13,13 +13,13 @@
     
 </ion-header>
 
-<ion-content padding >
- 
+<ion-content padding color="success" >
+  <ion-card color="dark" class="alineacion">
+      <ion-card-title>Examenes Disponobles</ion-card-title>
+    <img class="icon"  src="assets/icon/ut.png" alt="">
+  </ion-card>
+
 <ion-card class="bg">
-    <ion-card-header class="texto">
-        <ion-card-subtitle>Universidad Tecnologica de Tecamachalco</ion-card-subtitle>
-        <ion-card-title>Examenes Disponobles</ion-card-title>
-      </ion-card-header>
   <ion-item  href="/preguntas"class="bg">
     <ion-label>Desarrollo de Aplicaciones 2</ion-label>
   </ion-item>
@@ -28,11 +28,11 @@
     <ion-label>Ingenieria de Software</ion-label>
   </ion-item>
 
-  <ion-item class="bg">
+  <ion-item class="bg" href="#">
     <ion-label>Administracion de Proyectos</ion-label>
   </ion-item>
 
-  <ion-item class="bg"> 
+  <ion-item class="bg" href="#"> 
     <ion-label >Calidad de Software</ion-label>
   </ion-item>
 </ion-card>

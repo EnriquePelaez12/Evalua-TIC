@@ -3,15 +3,21 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      Perfil de Alumno
+    <ion-title class="col">
+        EVALUA-TIC
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content  padding >
-    <img class="icon"  src="assets/icon/perfil.png" alt="">
+<ion-content   color="success" padding  >
 
+    <ion-card class="bg">
+        <ion-card-header>
+            <ion-card-title  class="titulo">Alumno</ion-card-title>
+          </ion-card-header>
+    </ion-card>
+    <ion-card color="dark">
+        <img class="icon"  src="assets/icon/ut.png" alt="">
     <ion-item *ngIf="todo">
       <ion-label position="floating" > Correra</ion-label>
       <ion-input type="text" [(ngModel)]="todo.carrera" name="carrera"></ion-input>
@@ -32,7 +38,7 @@
       <ion-label position="floating" > Matricula</ion-label>
       <ion-input type="matricula" [(ngModel)]="todo.matricula" name="matricula"></ion-input>
     </ion-item>
-<br>
-<ion-button  routerLink="/list" expand="block" (click)="saveTodo()">Guardar</ion-button>
+  </ion-card>
+  <ion-button color="warning"  routerLink="/list" expand="block" (click)="saveTodo()">Guardar</ion-button>
 </ion-content>
  

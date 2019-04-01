@@ -9,44 +9,49 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding  class="bg-image no-scroll">
-  <ion-card class="bg"  id="alumnos" *ngFor="let alumno of alumnos; index as i">
+<ion-content padding color="success"
+id="alumnos" *ngFor="let alumno of alumnos; index as i">
+  <ion-card class="bg" >
       <ion-card-header>
           <ion-card-title  class="titulo">ALUMNO</ion-card-title>
         </ion-card-header>
     <img class="icon"  src="assets/icon/perfil.png" alt="">
+    <br>
+    <br>
     <ion-row class="alineacion">
         <ion-col>
-            <h5>{{alumno.apellido}}</h5>
+          {{alumno.apellido}}
             </ion-col>
       </ion-row>
+      <br>
     <ion-row class="alineacion">
         <ion-col>
-         <h5>{{alumno.nombre}}</h5> 
+         {{alumno.nombre}}
             </ion-col>
       </ion-row>
+      <br>
       <ion-row class="alineacion">
           <ion-col>
-             <h5> {{alumno.matricula}}</h5>   
+             {{alumno.matricula}} 
               </ion-col>
         </ion-row>
+        <br>
         <ion-row class="alineacion">
             <ion-col>
-               <h4> {{alumno.carrera}}</h4>     
+                {{alumno.carrera}}  
                 </ion-col>
           </ion-row>
+          <br>
           <ion-row class="alineacion">
               <ion-col>
-                  <h5> {{alumno.grado}}</h5>
+                  {{alumno.grado}}
                 </ion-col>
             </ion-row>
             <br>
-
-<br>
-<ion-button [routerLink]="['/registro', alumno.id]" class="" expand="block">
+</ion-card>
+<ion-button [routerLink]="['/registro', alumno.id]" color="warning" expand="block">
   Perfil
 </ion-button>
-</ion-card>
 </ion-content>
  
 
