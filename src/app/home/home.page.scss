@@ -5,3 +5,17 @@
 .texto{
   text-align: center;
 }
+
+.bg-image {
+  background: url('/src/assets/icon/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.no-scroll .scroll-content {
+  overflow: hidden;
+}       
+
+.bg{
+ 
+  //background-image: url("/src/assets/icon/fondo.png");
+   background: linear-gradient(to left, #30f0a0 0%, #21d8b9 100%);
+}

@@ -1,8 +1,8 @@
 export interface AlumnoInterface {
-    id?: string;
-    nombreC: string;
-    materiasIn: string;
-    correo: string;
-    matricula: string;
-    titulo: string;
+  id?: string;
+  carrera: string;
+  nombre: string;
+  apellido: string;
+  grado: string;
+  matricula: string;
   }

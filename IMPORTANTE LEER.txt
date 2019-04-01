@@ -5,6 +5,8 @@ y el proyecto compilar bien
 npm i firebase @angular/fire --save             -->  instalacion de dos dependencias, firebase y angular fire2, sirve para hacer la conexion a firebase
 
 
+Se va ocupar este proyecto para hacer la app del ALUMNO y es la que esta conectada a git
+
 
 
 

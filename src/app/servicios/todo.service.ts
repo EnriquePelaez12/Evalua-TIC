@@ -12,7 +12,7 @@ export class TodoService {
   private todos: Observable<AlumnoInterface[]>;
 
   constructor(db:AngularFirestore) { 
-    this.todosCollection = db.collection<AlumnoInterface>('profesores');
+    this.todosCollection = db.collection<AlumnoInterface>('alumnos');
     this.todos = this.todosCollection.snapshotChanges().pipe(
       map(actions => {
         return actions.map(a => {

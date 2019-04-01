@@ -14,6 +14,7 @@ export class DetailsPreguntasPage implements OnInit {
 
   poo:InterfacePOO = {
     pregunta: '',
+    rnull: '',
     respuesta: ''
   };
   

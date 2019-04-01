@@ -1,4 +1,9 @@
 
+.back{
+    background: linear-gradient(to left, #afb9b5 0%, #21d8b9 100%);
+
+}
+
 .icon{
     display: block;
     margin-left: auto;
@@ -7,5 +12,32 @@
 }
 .alineacion{
     text-align: center;
+    font-family: "Homer Simpson", cursive;
+    
      
 }
+.titulo{
+    text-align: center;
+    color: rgb(12, 177, 48);
+    font-family: fantasy; 
+    font-size: 200%;
+
+}
+.col{
+    color: darkorange;
+    font-family: fantasy; 
+}
+
+.bg{
+ 
+    //background-image: url("/src/assets/icon/fondo.png");
+     background: linear-gradient(to left, #30f0a0 0%, #21d8b9 100%);
+}
+
+.bg-image {
+    background: url('/src/assets/icon/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .no-scroll .scroll-content {
+    overflow: hidden;
+  }
